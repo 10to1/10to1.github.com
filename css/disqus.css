@@ -1,0 +1,119 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 1em;
+	text-decoration: none;
+	border: 0;
+	outline: none;
+	list-style: none;
+}
+
+textarea {
+	height: 100px;
+	background: none;
+	border-bottom: 1px solid #333;
+	padding-top: 1px;
+	font: 13px/18px "Lucida Grande", Lucida, Verdana, sans-serif;
+	color: #666;
+	text-shadow: #111 0 0 1px;
+	-webkit-transition: all 0.1s linear;
+}
+
+textarea:hover {
+	border-color: #444;
+	color: #999;
+}
+
+textarea:focus {
+	border-color: #555;
+	color: #ccc;
+}
+
+input[type=submit] {
+	font: 11px/20px "Lucida Grande", Lucida, Verdana, sans-serif;
+	text-transform: uppercase;
+	color: #ccc;
+	text-shadow: #222 0 -1px 1px;
+	cursor: pointer;
+	opacity: .75;
+	-webkit-transition: opacity 0.1s linear;
+}
+
+input[type=submit]:hover,
+input[type=submit]:focus {
+	opacity: 1;
+}
+
+input[type=submit]:active {
+	opacity: .5;
+}
+
+input[type=text] {
+	height: 18px;
+	background: none;
+	border-bottom: 1px solid #333;
+	padding-top: 1px;
+	font: 13px/18px "Lucida Grande", Lucida, Verdana, sans-serif;
+	color: #666;
+	text-shadow: #111 0 0 1px;
+	-webkit-transition: all 0.1s linear;
+}
+
+input[type=text]:hover {
+	border-color: #444;
+	color: #999;
+}
+
+input[type=text]:focus {
+	border-color: #555;
+	color: #ccc;
+}
+
+form {
+	border: 1px solid #333;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	margin: 0;
+}
+
+form input[type=submit] {
+	width: 300px;
+	height: 30px;
+	line-height: 30px; 
+	background: url(/img/comment.png) no-repeat 0 0;
+}
+
+form a {
+	font-size: 13px;
+	text-transform: none;
+}
+
+form input[type=text] {
+	width: 220px;
+	margin: 10px 9px;
+}
+
+form textarea {
+	width: 420px;
+	margin: 9px;
+	margin-bottom: 0;
+	resize: none;
+}
+
+form small {
+	color: #999;
+	font-family: "Lucida Sans";
+	font-style: italic;
+	margin: -6px 0 0 168px;
+	display: block;
+}
+
+.submit-footer {
+	padding: 0 85px 10px 85px ;
+	height: 30px;
+}
+
+#choose-subscription {
+	display:none;
+}

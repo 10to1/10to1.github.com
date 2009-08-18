@@ -1,0 +1,16 @@
+<div class="article">
+	<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+	<p class="posted">
+		<a href="{{ post.url }}">
+			{{ post.date | date:"<span class='day'>%d</span> <span class='month'>%b</span> <span class='year'>%Y</span>" }}
+		</a>
+	</p>
+	<div class="body">
+		{{ post.content }}
+	</div>
+	<ul class="meta">
+		<li>Posted by <a href="/author/{{ post.author | downcase }}">{{ post.author }}</a></li>
+		<li>Category: <a href="/{{ post.categories | downcase }}">{{ post.categories }}</a></li>
+		<li><a href="{{ post.url }}#disqus_thread">Comments</a></li>
+	</ul>
+</div>

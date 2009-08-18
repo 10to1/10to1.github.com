@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>{{ page.title }}</title>
+		<link rel="stylesheet" href="/css/master.css" type="text/css" />
+		<link rel="stylesheet" href="/css/syntax.css" type="text/css" />
+		<link href="/atom.xml" rel="alternate" title="Under the Hat - A weblog written by 10to1" type="application/atom+xml" />
+	</head>
+	<body>
+		<script>
+			var disqus_developer = 1;
+			var disqus_iframe_css = "http://localhost:4000/css/disqus.css";
+		</script>
+		<p id="goto10to1"><a href="http://10to1.be/en" rel="home">Return to 10to1.be</a></p>
+		<div id="wrapper">
+			<h1>Under the Hat</h1>
+			<hr />
+			<div id="content">
+				{% if page.site_filter %}
+					{% if page.site_filter == 'Koen' or page.site_filter == 'Tom' %}
+						<p id="filter">All posts by <a href="/author/{{page.site_filter | downcase }}">{{page.site_filter}}</a></p>
+					{% else %}
+					<p id="filter">Category: <a href="/{{page.site_filter | downcase }}">{{page.site_filter}}</a></p>
+					{% endif %}
+				{% endif %}
+				{{ content }}
+				{% if page.site_filter == null and paginator.total_pages > 1 %}
+				<ul id="paging">
+					{% if paginator.next_page %}
+					<li id="count">Page <strong>{{ paginator.next_page | minus:1 }}</strong> of <strong>{{ paginator.total_pages }}</strong></li>
+					{% else %}
+					<li id="count">Page <strong>{{ paginator.total_pages }}</strong> of <strong>{{ paginator.total_pages }}</strong></li>
+					{% endif %}
+					{% if paginator.previous_page %}
+					<li id="newest"><a href="/" title="Go to newest articles">Newest articles</a></li>
+						{% if paginator.previous_page > 1 %}
+						<li id="newer"><a href="/page{{ paginator.previous_page }}" title="Go to newer articles">Newer articles</a></li>
+						{% else %}
+						<li id="newer"><a href="/" title="Go to newer articles">Newer articles</a></li>
+						{% endif %}
+					{% else %}
+					<li id="newest"><a class="disabled" title="Go to newest articles">Newest articles</a></li>
+					<li id="newer"><a class="disabled" title="Go to newer articles">Newer articles</a></li>
+					{% endif %}
+					{% if paginator.next_page %}
+					<li id="oldest"><a href="/page{{ paginator.total_pages }}" title="Go to oldest articles">Oldest articles</a></li>
+					<li id="older"><a href="/page{{ paginator.next_page }}" title="Go to older articles">Older articles</a></li>
+					{% else %}
+					<li id="oldest"><a class="disabled" title="Go to oldest articles">Oldest articles</a></li>
+					<li id="older"><a class="disabled" title="Go to older articles">Older articles</a></li>
+					{% endif %}
+				</ul>
+				{% endif %}
+			</div>
+			<hr />
+			<div id="sec-content">
+				<a href="/"><img id="logo" src="/img/logo.png" alt="Under the Hat logo" /></a>
+				<div class="node" id="about">
+					<h2>About this blog</h2>
+					<p>You’re reading <strong>Under the Hat</strong>, a weblog written by <a href="http://10to1.be/en">10to1</a>.</p>
+				</div>
+				<div class="node" id="search">
+					<h2>Search</h2>
+					<form action="http://www.google.com/cse" id="cse-search-box">
+						<input type="hidden" name="cx" value="006169093033817144292:jo-onocmvqy" />
+						<input type="hidden" name="ie" value="UTF-8" />
+						<p>
+							<label><input type="text" name="q" /></label>
+							<input type="submit" name="sa" value="Search" />
+						</p>
+					</form>
+				</div>
+				<div class="node" id="rss">
+					<h2>Subscribe</h2>
+					<p><a href="#">Subscribe to our RSS-feed</a></p>
+				</div>
+				<div class="node" id="who">
+					<h2>Who’s got the mic?</h2>
+					<ul>
+						<li>
+							<strong>Tom Klaasen</strong>
+							<em>Architecture &amp; Design</em>
+							<a href="/author/tom">Posts written by Tom</a>
+							<img src="/img/tom.png" alt="Picture of Tom" />
+						</li>
+						<li>
+							<strong>Koen Van Der Auwera</strong>
+							<em>Technical Guru</em>
+							<a href="/author/koen">Posts written by Koen</a>
+							<img src="/img/koen.png" alt="Picture of Koen" />
+						</li>
+					</ul>
+				</div>
+				<div class="node" id="projects">
+					<h2>Our projects</h2>
+					<ul>
+						<li id="eetidee"><a href="http://eetidee.be/"><strong>EetIdee</strong> What’s for dinner?</a></li>
+						<li id="twistory"><a href="http://twistory.net/"><strong>Twistory</strong> Twitter + History</a></li>
+					</ul>
+					<p>More? Check out our <a href="http://10to1.be/en/#referenties">portfolio</a>!</p>
+				</div>
+				<div class="node" id="categories">
+					<h2>Categories</h2>
+					<ul>
+						<li><a href="/rails">Rails <small>{{ site.categories.rails | size }}</small></a></li>
+					</ul>
+				</div>
+				<!-- <div class="node" id="archive">
+					<h2>Archive</h2>
+					<ul>
+						<li>
+							<a class="year" href="archive.html">2009</a>
+							<ul>
+								<li><a href="archive.html">September <small>1</small></a></li>
+								<li><a href="archive.html">August <small>2</small></a></li>
+								<li><a href="archive.html">July <small>5</small></a></li>
+								<li><a href="archive.html">June <small>2</small></a></li>
+							</ul>
+						</li>
+						<li>
+							<a class="year" href="archive.html">2008</a>
+							<ul>
+								<li><a href="archive.html">May <small>4</small></a></li>
+								<li><a href="archive.html">April <small>7</small></a></li>
+							</ul>
+						</li>
+					</ul>
+				</div> -->
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+		//<![CDATA[
+		(function() {
+				var links = document.getElementsByTagName('a');
+				var query = '?';
+				for(var i = 0; i < links.length; i++) {
+					if(links[i].href.indexOf('#disqus_thread') >= 0) {
+						query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+					}
+				}
+				document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/10to1/get_num_replies.js' + query + '"></' + 'script>');
+			})();
+		//]]>
+		</script>
+		
+	</body>
+</html>

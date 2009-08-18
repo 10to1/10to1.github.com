@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<div class="article">
+	<h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
+	<p class="posted">
+		<a href="{{ page.url }}">
+			{{ page.date | date:"<span class='day'>%d</span> <span class='month'>%b</span> <span class='year'>%Y</span>" }}
+		</a>
+	</p>
+	<div class="body">
+		{{ content }}
+	</div>
+	<ul class="meta">
+		<li>Posted by <a href="/author/{{ post.author | downcase }}">{{ page.author }}</a></li>
+		<li>Category: <a href="/{{ post.categories | downcase }}">{{ page.categories }}</a></li>
+		<li><a href="{{ page.url }}#disqus_thread">Comments</a></li>
+	</ul>
+</div>
+<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/10to1/embed.js"></script><noscript><a href="http://10to1.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>

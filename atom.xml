@@ -1,0 +1,24 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"> 
+ <title>Under the Hat - A weblog written by 10to1</title>
+ <link href="http://blog.10to1.be/atom.xml" rel="self"/>
+ <link href="http://10to1.be/"/>
+ <updated>{{ site.time | date_to_xmlschema }}</updated>
+ <id>http://blog.10to1.be/</id>
+ <author>
+   <name>10to1</name>
+   <email>info@10to1.be</email>
+ </author> 
+ {% for post in site.posts limit:10 %}
+ <entry>
+   <title>{{ post.title }}</title>
+   <link href="http://blog.10to1.be{{ post.url }}"/>
+   <updated>{{ post.date | date_to_xmlschema }}</updated>
+   <id>http://blog.10to1.be{{ post.id }}</id>
+   <content type="html">{{ post.content | xml_escape }}</content>
+ </entry>
+ {% endfor %} 
+</feed>

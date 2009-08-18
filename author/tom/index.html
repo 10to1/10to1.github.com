@@ -1,0 +1,10 @@
+---
+layout: default
+title: Under the Hat - Author - Tom
+site_filter: Tom
+---
+{% for post in site.posts %}
+	{% if post.author == 'Tom' %}
+		{% include post.html %}
+	{% endif %}
+{% endfor %}
