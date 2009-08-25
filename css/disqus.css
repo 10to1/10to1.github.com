@@ -114,6 +114,7 @@ form small {
 	height: 30px;
 }
 
-#choose-subscription {
+#choose-subscription,
+#dsq-label-retweet {
 	display:none;
 }
