@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hello World!
+title: Hello Worldie!
 author: Koen
 category: rails
 ---
