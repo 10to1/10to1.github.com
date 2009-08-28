@@ -115,6 +115,7 @@ form small {
 }
 
 #choose-subscription,
-#dsq-label-retweet {
+#dsq-label-retweet,
+#dsq-post-retweet {
 	display:none;
 }
