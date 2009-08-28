@@ -14,3 +14,4 @@ Time.now.utc.iso8601.gsub('-', '').gsub(':', '')
 {% endhighlight %}
 
 Very handy if you need a timestamp in a file you're writing.
+
