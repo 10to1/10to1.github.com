@@ -28,6 +28,10 @@ hr {
 
 /* @end */
 
+del {
+	text-decoration: line-through;
+}
+
 /* @group default */
 
 /* @group body */
