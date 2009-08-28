@@ -12,17 +12,17 @@ With the help of the [RubySwitcher](http://github.com/relevance/etc/blob/26ae85c
 
 Out of the box, you can install and use the following versions of Ruby:
 
-* install_ruby_191 (install) <br>
-use_ruby_191 (use)
-* install_ruby_186 (install) <br>
-use_ruby_186 (use)
-* install_ruby_187 (install) <br>
-use_ruby_187 (use)
-* install_jruby (install) <br>
-use_jruby (use)
-* install_jruby_120 (install) <br>
-use_jruby_120 (use)
-* install_ree_186 (install) <br>
-use use_ree_186 (use)
+* `install_ruby_191` (install) <br>
+`use_ruby_191` (use)
+* `install_ruby_186` (install) <br>
+`use_ruby_186` (use)
+* `install_ruby_187` (install) <br>
+`use_ruby_187` (use)
+* `install_jruby` (install) <br>
+`use_jruby` (use)
+* `install_jruby_120` (install) <br>
+`use_jruby_120` (use)
+* `install_ree_186` (install) <br>
+`use use_ree_186` (use)
 
 To use the standard Ruby version: `use_leopard_ruby`
