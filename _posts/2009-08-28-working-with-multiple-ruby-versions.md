@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working with multiple ruby versions: the sequel
+title: Working with multiple ruby versions - the sequel
 author: Tom
 category: rails
 ---
