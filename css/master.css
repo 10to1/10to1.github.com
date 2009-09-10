@@ -974,26 +974,41 @@ h1 {
 	display: none;
 }
 
+#rss ul {
+	border: 1px solid #333;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+
+#rss ul li {
+	border-top: 1px solid #333;
+}
+
+#rss ul li:first-child {
+	border: 0;
+}
+
 #rss a {
 	display: block;
 	line-height: 38px;
 	font-size: 13px;
 	font-weight: bold;
 	text-transform: none;
-	padding: 0 9px;
-	border: 1px solid #333;
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px; 
+	padding: 0 39px 0 9px;
+	position: relative;
+}
+
+#rss a.rss {
 	background: url(/img/rss.png) no-repeat right -1px;
 }
 
-#rss a:hover,
-#rss a:focus {
+#rss a.rss:hover,
+#rss a.rss:focus {
 	background-position: right -41px;
 }
 
-#rss a:active {
+#rss a.rss:active {
 	background-position: right -81px;
 }
 
