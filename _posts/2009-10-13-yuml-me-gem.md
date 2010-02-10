@@ -29,7 +29,7 @@ Thanks to [Jeweler](http://github.com/technicalpickles/jeweler) it's dead easy t
 	
 Syntax overview: [http://yuml.me/diagram/scruffy/class/draw](http://yuml.me/diagram/scruffy/class/draw)
 
-###Ouput###
+###Output###
 
 `yuml-output.png`
 
