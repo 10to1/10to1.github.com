@@ -33,7 +33,7 @@ campfire:
  with `cap #args#` (#compare_url#)"
 </pre>
 
-If you're not sure about this automagically thing, you can do it by hand as well, create the `~/.campfire` file and add the following to your `config/deploy.rb` :
+If you're not sure about this automagically thing, you can do it by hand as well, create the `~/.campfire` file and add the following to your `config/deploy.rb`:
 
 <pre>
 begin
