@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Capfire: post deploy notifications to Campfire
+title: Capfire, post deploy notifications to Campfire
 category: ruby
 author: Piet
 ---
