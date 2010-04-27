@@ -1,0 +1,10 @@
+---
+layout: default
+title: Under the Hat - Author - Jelle
+site_filter: Jelle
+---
+{% for post in site.posts %}
+	{% if post.author == 'Jelle' %}
+		{% include post.html %}
+	{% endif %}
+{% endfor %}
