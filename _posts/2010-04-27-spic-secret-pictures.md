@@ -6,7 +6,7 @@ category: ruby
 ---
 A couple of weeks ago, **ruby-play** was imminent and in such a case one should always try some new things. [Heroku](http://heroku.com) is hot, so it had to be something I could deploy on Heroku. [Sinatra 1.0](http://www.sinatrarb.com/one-oh-faq) was released, so it had to be something using Sinatra.
 
-**What else?** [S3](http://aws.amazon.com/s3/) is always fun and with in mind I found the [CarrierWav gem](http://github.com/jnicklas/carrierwave).
+**What else?** [S3](http://aws.amazon.com/s3/) is always fun and with that in mind I found the [CarrierWave gem](http://github.com/jnicklas/carrierwave).
 
 **More?** Sure. To experiment with something else then ActiveRecord I used [Sequel](http://sequel.rubyforge.org/).
 
