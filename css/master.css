@@ -105,7 +105,7 @@ pre {
 
 pre code {
 	display: block;
-	white-space: normal;
+	/* white-space: normal; */
 }
 
 /* @end */
@@ -340,7 +340,7 @@ strong {
 #write form input[type=submit] {
 	width: 300px;
 	height: 30px;
-	line-height: 30px; 
+	line-height: 30px;
 	background: url(/img/comment.png) no-repeat 0 0;
 }
 
@@ -427,7 +427,7 @@ strong {
 	height: 30px;
 	text-indent: 150%;
 	overflow: hidden;
-	white-space: nowrap; 
+	white-space: nowrap;
 	background: url(/img/author.png) no-repeat;
 }
 
@@ -614,7 +614,7 @@ h1 {
 	height: 170px;
 	text-indent: 150%;
 	overflow: hidden;
-	white-space: nowrap; 
+	white-space: nowrap;
 	background: url(/img/10to1.png) no-repeat 0 0;
 	opacity: .9;
 	-webkit-transition: opacity 0.1s linear;
@@ -690,7 +690,7 @@ h1 {
 	display: block;
 	font-size: 13px;
 	text-transform: none;
-	color: #999; 
+	color: #999;
 	background: url(/img/project-go.png) no-repeat right -1px;
 }
 
@@ -711,7 +711,7 @@ h1 {
 	margin: 0 10px 0 9px;
 	text-indent: 150%;
 	overflow: hidden;
-	white-space: nowrap; 
+	white-space: nowrap;
 	background: url(/img/projects.png) no-repeat 0 -1px;
 }
 
@@ -1156,7 +1156,7 @@ h1 {
 /* disqus */
 #dsq-login,
 #dsq-options,
-.dsq-item-feed, 
+.dsq-item-feed,
 .dsq-by,
 .dsq-comment-footer {
 	display: none;
