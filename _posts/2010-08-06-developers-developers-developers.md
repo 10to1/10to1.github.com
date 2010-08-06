@@ -4,7 +4,7 @@ title: (Dutch) Developers, developers, developers
 author: Tom
 category: general
 ---
-Voor 10to1 zijn de developers de kern van het bedrijf. Onze mensen behoren tot de cr&egrave;me de la cr&egrave;me, en zo hoort het ook voor een bedrijf dat [software doet groeien](general/2010/06/17/we-grow-software/)
+Voor 10to1 zijn de developers de kern van het bedrijf. Onze mensen behoren tot de cr&egrave;me de la cr&egrave;me, en zo hoort het ook voor een bedrijf dat [software doet groeien](/general/2010/06/17/we-grow-software)
 
 Sinds 2006 is 10to1 bezig met het ontwikkelen van web applicaties in alle soorten en maten. We gebruiken daarvoor vooral Ruby on Rails, en soms ook Java. Sinds 2008 ontwikkelen we iPhone applicaties, en nu cre&euml;ren we natuurlijk ook iPad applicaties.
 
