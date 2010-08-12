@@ -34,7 +34,7 @@ Even while we're in a room together, we want to share links, screenshots, and ge
 
 I've used Campfire to get feedback of our team about this blogpost. Enough said :) 
 
-Wouldn't you want to work in an environment like this? You do know [we're hiring](/general/2010/08/06/developers-developers-developers/), don't you?
+Wouldn't you want to work in an environment like this? You do know [we're hiring](http://blog.10to1.be/general/2010/08/06/developers-developers-developers/), don't you?
 
 
 
