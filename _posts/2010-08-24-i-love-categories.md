@@ -18,7 +18,7 @@ Then we'll create a category on the NSString class in which we define a method `
 
 ### How to create them?
 
-Create a header `(NSString+UtilityMethods.h)` and a implementation file `(NSString+UtilityMethods.m)`.
+Create a header `(NSString+UtilityMethods.h)` and an implementation file `(NSString+UtilityMethods.m)`.
 
 You define the category and the method in the header file like this:
 
@@ -43,7 +43,7 @@ Now you can use the `isEmpty` method on every instance of NSString. (Don't forge
 {% highlight objc %}
 NSString *text  = @"";
 if ([text isEmpty]) {
-	text = @"Categories are awesome";
+  text = @"Categories are awesome";
 }
 NSLog(text);
 {% endhighlight %}
