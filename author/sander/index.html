@@ -1,0 +1,10 @@
+---
+layout: default
+title: Under the Hat - Author - Sander
+site_filter: Sander
+---
+{% for post in site.posts %}
+	{% if post.author == 'Sander' %}
+		{% include post.html %}
+	{% endif %}
+{% endfor %}

@@ -17,7 +17,7 @@
 			<hr />
 			<div id="content">
 				{% if page.site_filter %}
-					{% if page.site_filter == 'Koen' or page.site_filter == 'Tom' or page.site_filter == 'Piet' or page.site_filter == 'Jelle' %}
+					{% if page.site_filter == 'Koen' or page.site_filter == 'Tom' or page.site_filter == 'Piet' or page.site_filter == 'Jelle' or page.site_filter == 'Sander' %}
 						<p id="filter">All posts by <a href="/author/{{page.site_filter | downcase }}">{{page.site_filter}}</a></p>
 					{% else %}
 					<p id="filter">Category: <a href="/{{page.site_filter | downcase }}">{{page.site_filter}}</a></p>
@@ -104,6 +104,12 @@
 							<em>Iceman</em>
 							<a href="/author/jelle">Posts written by Jelle</a>
 							<img src="/img/jelle.png" alt="Picture of Jelle" />
+						</li>
+						<li>
+							<strong>Sander Schouten</strong>
+							<em>Zen-coder</em>
+							<a href="/author/sander">Posts written by Sander</a>
+							<img src="/img/sander.png" alt="Picture of Sander" />
 						</li>
 					</ul>
 				</div>
