@@ -33,7 +33,7 @@ Since we only had 48 hours to make it, we didn't get in as much features as we w
 * Did we have fun? Yes.
 * Will we participate again? Yes.
 * Are we proud of our 13th place? Yes. (13 is the new 1)
-* Did we sleep much? No. ((OK: I overslept for 6 hours; quit whining [Jelle](http://twitter.com/fousa))
+* Did we sleep much? No. (OK: I overslept for 6 hours; quit whining [Jelle](http://twitter.com/fousa))
 * Did it have bugs? Yes, some.
 * Could we have done it without Rails? No. (Okay, maybe in Sinatra)
 * Will we push the app even further? Yes. (It got an update last night, which fixed some bugs and made some performance enhancements).
