@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Custom delegate's, the Apple way
+title: Custom delegates, the Apple way
 author: Jelle
 category: cocoa
 ---
