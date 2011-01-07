@@ -9,7 +9,7 @@ As a fulltime [Textmate](http://macromates.com/) user, I was really happy with m
 
 ### So why would I do this?
 
-Well, I can't lie to you. I wanted something more special than Textmate, everybody uses Textmate these days and I have the impression that more en more developers in the [Rails](http://rubyonrails.org/) community are switching to an editor like Emacs or Vim. And because [Piet](http://twitter.com/junkiesxl) is a die hard Emacs user I wanted to compete with him by using Vim.
+Well, I can't lie to you. I wanted something more special than Textmate, everybody uses Textmate these days and I have the impression that more developers in the [Rails](http://rubyonrails.org/) community are switching to an editor like Emacs or Vim. And because [Piet](http://twitter.com/junkiesxl) is a die hard Emacs user I wanted to compete with him by using Vim.
 
 ### Github
 
