@@ -1,0 +1,10 @@
+---
+layout: default
+title: Under the Hat - Author - Dottom
+site_filter: Dottom
+---
+{% for post in site.posts %}
+	{% if post.author == 'Dottom' %}
+		{% include post.html %}
+	{% endif %}
+{% endfor %}
