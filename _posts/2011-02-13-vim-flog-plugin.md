@@ -31,7 +31,7 @@ All the credits for this plugin go to [@skammer](http://www.twitter.com/skammer)
 
 **Emacs**
 
-In case you're using emacs, [Piet](http://blog.10to1.be/author/piet/) recommends using the [Emacs Ruby Complexity Plugin](https://github.com/topfunky/emacs-starter-…).
+In case you're using emacs, [Piet](http://blog.10to1.be/author/piet/) recommends using the [Emacs Ruby Complexity Plugin](https://github.com/topfunky/emacs-starter-kit/tree/master/vendor/ruby-complexity/).
 
 **Resources**
 
