@@ -15,7 +15,7 @@ You can find the installation instructions on [Github](https://github.com/fousa/
 
 **Creating your personal theme**
 
-The source files for the 10to1 theme can be found [here](https://github.com/fousa/lighthousekeeper-10to1-template/). It's very easy to create when you know how to write HTML and CSS.
+The source files for the 10to1 theme can be found [here](https://github.com/fousa/lighthousekeeper-10to1-template/). It's very easy to create when you know HTML and CSS.
 
 **Now let's get you on the way.**
 
