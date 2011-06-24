@@ -1,0 +1,10 @@
+---
+layout: default
+title: Under the Hat - Author - TW
+site_filter: TW
+---
+{% for post in site.posts %}
+	{% if post.author == 'TW' %}
+		{% include post.html %}
+	{% endif %}
+{% endfor %}

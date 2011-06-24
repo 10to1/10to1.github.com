@@ -17,7 +17,7 @@
 			<hr />
 			<div id="content">
 				{% if page.site_filter %}
-					{% if page.site_filter == 'Koen' or page.site_filter == 'Tom' or page.site_filter == 'Piet' or page.site_filter == 'Jelle' or page.site_filter == 'Sander' or page.site_filter == 'Dottom' or page.site_filter == 'Bob' %}
+					{% if page.site_filter == 'Koen' or page.site_filter == 'Tom' or page.site_filter == 'Piet' or page.site_filter == 'Jelle' or page.site_filter == 'Sander' or page.site_filter == 'Dottom' or page.site_filter == 'Bob' or page.site_filter == 'TW' %}
 						<p id="filter">All posts by <a href="/author/{{page.site_filter | downcase }}">{{page.site_filter}}</a></p>
 					{% else %}
 					<p id="filter">Category: <a href="/{{page.site_filter | downcase }}">{{page.site_filter}}</a></p>
@@ -116,6 +116,12 @@
 							<em>.tom</em>
 							<a href="/author/dottom">Posts written by Tom</a>
 							<img src="/img/dottom.png" alt="Picture of Tom" />
+						</li>						
+						<li>
+							<strong>Tom Wijns</strong>
+							<em>TW</em>
+							<a href="/author/tw">Posts written by Tom</a>
+							<img src="/img/tw.png" alt="Picture of Tom" />
 						</li>						
 					</ul>
 				</div>
