@@ -17,7 +17,7 @@
 			<hr />
 			<div id="content">
 				{% if page.site_filter %}
-					{% if page.site_filter == 'Koen' or page.site_filter == 'Tom' or page.site_filter == 'Piet' or page.site_filter == 'Jelle' or page.site_filter == 'Sander' or page.site_filter == 'Dottom' or page.site_filter == 'Bob' or page.site_filter == 'TW' %}
+					{% if page.site_filter == 'Koen' or page.site_filter == 'Tom' or page.site_filter == 'Piet' or page.site_filter == 'Jelle' or page.site_filter == 'Sander' or page.site_filter == 'Dottom' or page.site_filter == 'Bob' or page.site_filter == 'TW' or page.site_filter == 'Steven' %}
 						<p id="filter">All posts by <a href="/author/{{page.site_filter | downcase }}">{{page.site_filter}}</a></p>
 					{% else %}
 					<p id="filter">Category: <a href="/{{page.site_filter | downcase }}">{{page.site_filter}}</a></p>
@@ -122,7 +122,13 @@
 							<em>TW</em>
 							<a href="/author/tw">Posts written by Tom</a>
 							<img src="/img/tw.png" alt="Picture of Tom" />
-						</li>						
+						</li>	
+						<li>
+							<strong>Steven Van Goethem</strong>
+							<em>Developer</em>
+							<a href="/author/steven">Posts written by Steven</a>
+							<img src="/img/steven.png" alt="Picture of Steven" />
+						</li>	
 					</ul>
 				</div>
 				<div class="node" id="projects">
