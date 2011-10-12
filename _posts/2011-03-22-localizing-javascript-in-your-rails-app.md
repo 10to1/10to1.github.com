@@ -17,7 +17,7 @@ gem "i18n-js"
 
 Now add the following *before\_filter* to your *ApplicationController*. This generates the Javascript translation file every time you render a page in development.
 
-{% highlight rails %}
+{% highlight ruby %}
 class ApplicationController < ActionController::Base
   before_filter :export_i18n_messages
 
