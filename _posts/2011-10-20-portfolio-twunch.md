@@ -14,9 +14,9 @@ De [eerste Twunch](http://twunch.be/twunches/2008-03-17-130000-0100-11) werd ‘
 
 **De website**
 
-![Twunch screenshot.](http://blog.10to1.be/img/portfolio_twunch_01.png "Twunch screenshot.")
+[![Twunch screenshot.](http://blog.10to1.be/img/portfolio_twunch_01.png "Twunch screenshot.")](http://www.twunch.be)
 
-Om zelf een Twunch voor te stellen, moet je eerst de webapplicatie toegang geven tot je Twitter-account. Alles verloopt via OAuth, dus je wachtwoord wordt nergens opgeslagen.
+Om zelf een Twunch voor te stellen, moet je eerst de [webapplicatie](http://www.twunch.be) toegang geven tot je Twitter-account. Alles verloopt via OAuth, dus je wachtwoord wordt nergens opgeslagen.
 
 Daarna geef je de nodige gegevens op (plaats, datum en tijdstip) en de applicatie verspreidt de nieuwe Twunch via je eigen Twitteraccount.
 
