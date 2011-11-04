@@ -310,6 +310,10 @@ strong {
 	margin: 0;
 }
 
+.body li {
+	list-style: decimal;
+}
+
 /* @group write */
 
 #write form {
