@@ -1,0 +1,10 @@
+---
+layout: default
+title: Under the Hat - Author - Evert
+site_filter: Evert
+---
+{% for post in site.posts %}
+	{% if post.author == 'Evert' %}
+		{% include post.html %}
+	{% endif %}
+{% endfor %}
