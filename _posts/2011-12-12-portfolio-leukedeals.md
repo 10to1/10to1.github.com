@@ -23,5 +23,5 @@ We zijn bij 10to1 nogal fan van social media, de combinatie met Facebook maakte 
 >Het team van 10to1 dacht met ons mee om de beste technische keuzes te maken voor het project. We kwamen tijdens het traject een aantal moeilijkheden tegen die steeds met de nodige creativiteit werden opgelost.  
 >Voor ons was het een Leuke Deal: de samenwerking verliep vlot, de communicatie was steeds open en constructief, en de prijs was correct voor de geleverde kwaliteit.
 
-Peter Plettinckx, Fleetexpert
+Peter Plettinckx, Countdown
 
