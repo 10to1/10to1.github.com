@@ -44,7 +44,7 @@ When we want to do a bit more advanced mapping, we'll have to subclass `NSEntity
 
 In the next example we will autofill the newly added field (companyName) with a default value '10to1'.
 
-Create a new file that subclasses from `NSEntityMigrationPolicy` and add the following code to the implementation class. You can choose the name of the file, doesn't really matter. 
+Create a new file called `CustomPhotoMigration` that subclasses from `NSEntityMigrationPolicy` and add the following code to the implementation class. You can choose the name of the file, doesn't really matter. 
 
 <div class="highlight" style="width: 720px"><pre><code class="objc"><span class="o">-</span> <span class="p">(</span><span class="kt">BOOL</span><span class="p">)</span><span class="nl">createDestinationInstancesForSourceInstance:</span><span class="p">(</span><span class="n">NSManagedObject</span> <span class="o">*</span><span class="p">)</span><span class="n">instance</span>
                                       <span class="nl">entityMapping:</span><span class="p">(</span><span class="n">NSEntityMapping</span> <span class="o">*</span><span class="p">)</span><span class="n">mapping</span>
@@ -66,6 +66,10 @@ Create a new file that subclasses from `NSEntityMigrationPolicy` and add the fol
 </code></pre>
 </div>
 
-This should auto fill the companyName field on every existing record with "10to1".
+Once the file is created you'll have to tell the mapping model to use our custom policy. Go to your `.xcmappingmodel` file and click on the entity mapping you would like to customize. In the Mapping Model Inspector pane on the right, just fill in the class name of your custom policy. In our case this will be `CustomPhotoMigration`.
+
+![The custom mapping policy](http://blog.10to1.be/img/core-data-versioning-custom-policy.png)
+
+This should auto fill the companyName field on every existing record with "10to1" the next time you run the app.
 
 For the record: you don't have to run a script or something like that to perform the migration. Just run your application and it will be executed for you.
