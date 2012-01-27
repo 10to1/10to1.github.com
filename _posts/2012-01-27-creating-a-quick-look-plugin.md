@@ -16,13 +16,13 @@ Now let's start developing!
 - Create a new Quick Look project
 ![Quick Look Project](/img/quick-look/setup.png)
 
-- Change the extention for both `GenerateThumbnailForURL.c` & `GeneratePreviewForURL.c` to .m. (This allows you to use Objective-C code and frameworks in these files)
+- Change the extension for both `GenerateThumbnailForURL.c` & `GeneratePreviewForURL.c` to .m. (This allows you to use Objective-C code and frameworks in these files)
 
-### Support an extention
+### Support an extension
 
-In this example I want to support the `.10to1` extention so that I can preview this file as a text file.
+In this example I want to support the `.10to1` extension so that I can preview this file as a text file.
 
-Below is an example on what you have to add to the `Info.plist` to support the `.10to1` extention.
+Below is an example on what you have to add to the `Info.plist` to support the `.10to1` extension.
 
 {% highlight bash %}
 <key>UTImportedTypeDeclarations</key>
