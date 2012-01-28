@@ -9,6 +9,14 @@ I've been searching for some decent documentation on how to create a Quick Look 
 
 For those wondering on what Quick Look does, [here](http://www.apple.com/findouthow/mac/#quicklook) is Apple's explanation.
 
+In this blog post I'll show you how to...
+
+- create a simple Quick Look plugin
+
+- support a custom file type
+
+- debug your plugin with Xcode
+
 ### Setup your Xcode project
 
 Now let's start developing!
@@ -151,6 +159,16 @@ But this didn't to the trick (I have no idea why…), so you can manually run th
 {% highlight bash %}
 qlmanage -t dummy.10to1
 {% endhighlight %}
+
+### The result
+
+After all this we have created our Quick Look plugin.
+
+If you want do distribute the plugin, just Archive & Save it.
+
+Open a `.10to1` file and enjoy the plugin! :)
+
+![The plugin](/img/quick-look/result.png)
 
 ### Some utilities
 
