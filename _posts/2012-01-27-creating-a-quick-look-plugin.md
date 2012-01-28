@@ -22,7 +22,7 @@ In this blog post I'll show you how to...
 Now let's start developing!
 
 - Create a new Quick Look project
-![Quick Look Project](/img/quick-look/setup.png)
+![Quick Look Project](http://blog.10to1.be/img/quick-look/setup.png)
 
 - Change the extension for both `GenerateThumbnailForURL.c` & `GeneratePreviewForURL.c` to .m. (This allows you to use Objective-C code and frameworks in these files)
 
@@ -124,7 +124,7 @@ We first have to copy the plugin to `~/Library/QuickLook` after a successfull bu
 
 - Add the generated file to the files list
 
-	![Copy Files](/img/quick-look/copy-files.png)	
+	![Copy Files](http://blog.10to1.be/img/quick-look/copy-files.png)	
 
 Run the plugin using `qlmanage`.
 
@@ -138,7 +138,7 @@ cp /usr/bin/qlmanage PROJECT_ROOT/.
 
 - Select the qlmanage executable in your project root
 
-	![qlmanage](/img/quick-look/executable.png)
+	![qlmanage](http://blog.10to1.be/img/quick-look/executable.png)
 
 - In the Run/Arguments tab you can add the folling `Arguments Passed On Launch` to render the preview:
 
@@ -168,7 +168,7 @@ If you want do distribute the plugin, just Archive & Save it.
 
 Open a `.10to1` file and enjoy the plugin! :)
 
-![The plugin](/img/quick-look/result.png)
+![The plugin](http://blog.10to1.be/img/quick-look/result.png)
 
 ### Some utilities
 
