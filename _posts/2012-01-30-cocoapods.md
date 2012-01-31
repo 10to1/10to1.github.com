@@ -20,7 +20,7 @@ Now there is a similar system for Cocoa, called [Cocoapods](https://github.com/C
 ### Installing cocoapods ###
 Cocoapods runs on macruby, so installing it using RVM is a breeze:
 
-{% highlight shell %}
+{% highlight sh %}
 
 $ rvm install macruby
 
@@ -28,7 +28,7 @@ $ rvm install macruby
 
 Then simply setup cocoapods like this:
 
-{% highlight shell %}
+{% highlight sh %}
 
 $ rvm use macruby
 $ macgem install cocoapods
@@ -68,7 +68,7 @@ The dependencies referencing a git repository must contain a ".podspec" file. Wh
 
 Now we can enable Cocoapods for our project by running `pod install` for the first time.
 
-{% highlight shell %}
+{% highlight sh %}
 
 $ pod install demoproject.xcodeproj
 
