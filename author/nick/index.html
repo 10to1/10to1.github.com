@@ -1,0 +1,10 @@
+---
+layout: default
+title: Under the Hat - Author - Nick
+site_filter: Nick
+---
+{% for post in site.posts %}
+	{% if post.author == 'Nick' %}
+		{% include post.html %}
+	{% endif %}
+{% endfor %}
