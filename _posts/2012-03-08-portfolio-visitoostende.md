@@ -4,7 +4,7 @@ title: Visit Oostende
 author: TW
 category: portfolio
 ---
-[Toerisme Oostende](http://www.visitoostende.be/) ging met ons in zee voor een mobiele app die een thematische wandeling rond Marvin Gaye begeleidt. De app begeleidt toeristen op een route langs alle plaatsen in de stad die gelinkt zijn aan de periode die Marvin Gaye doorbracht in Oostende.  
+[Toerisme Oostende](http://www.visitoostende.be/) ging met ons in zee voor een mobiele app die een thematische wandeling rond Marvin Gaye begeleidt. Havana stond in voor de inhoudelijke uitwerking. De app begeleidt toeristen op een route langs alle plaatsen in de stad die gelinkt zijn aan de periode die Marvin Gaye doorbracht in Oostende.  
 
 ![screenshot VisitOostende](http://blog.10to1.be/img/portfolio_vststnd_01.png)
 
