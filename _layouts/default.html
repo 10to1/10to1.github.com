@@ -33,7 +33,7 @@
 			<hr />
 			<div id="content">
 				{% if page.site_filter %}
-					{% if page.site_filter == 'Koen' or page.site_filter == 'Tom' or page.site_filter == 'Piet' or page.site_filter == 'Jelle' or page.site_filter == 'Sander' or page.site_filter == 'Dottom' or page.site_filter == 'Bob' or page.site_filter == 'TW' or page.site_filter == 'Steven' or page.site_filter == 'Sophie' or page.site_filter == 'Evert' or page.site_filter == 'Nick' %}
+					{% if page.site_filter == 'Koen' or page.site_filter == 'Tom' or page.site_filter == 'Piet' or page.site_filter == 'Jelle' or page.site_filter == 'Sander' or page.site_filter == 'Dottom' or page.site_filter == 'Bob' or page.site_filter == 'TW' or page.site_filter == 'Steven' or page.site_filter == 'Sophie' or page.site_filter == 'Evert' %}
 						<p id="filter">All posts by <a href="/author/{{page.site_filter | downcase }}">{{page.site_filter}}</a></p>
 					{% else %}
 					<p id="filter">Category: <a href="/{{page.site_filter | downcase }}">{{page.site_filter}}</a></p>
@@ -159,12 +159,6 @@
 							<em>Developer</em>
 							<a href="/author/evert">Posts written by Evert</a>
 							<img src="/img/evert.png" alt="Picture of Evert" />
-						</li>
-						<li>
-							<strong>Nick Looijmans</strong>
-							<em>Interface designer</em>
-							<a href="/author/nick">Posts written by Nick</a>
-							<img src="/img/nick.png" alt="Picture of Nick" />
 						</li>
 					</ul>
 				</div>
