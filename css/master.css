@@ -229,7 +229,7 @@ input[type=submit]:active {
 
 /* @group input */
 
-input[type=text] {
+input[type=text], input[type=email] {
 	height: 18px;
 	background: none;
 	border-bottom: 1px solid #333;
@@ -240,12 +240,12 @@ input[type=text] {
 	-webkit-transition: all 0.1s linear;
 }
 
-input[type=text]:hover {
+input[type=text]:hover, input[type=email]:hover {
 	border-color: #444;
 	color: #999;
 }
 
-input[type=text]:focus {
+input[type=text]:focus, input[type=email]:focus {
 	border-color: #555;
 	color: #ccc;
 }
@@ -993,6 +993,59 @@ h1 {
 	border: 0;
 }
 
+#rss li.newslttr {
+	display: block;
+	line-height: 38px;
+	font-size: 13px;
+	font-weight: bold;
+	text-transform: none;
+	padding: 0 39px 0 9px;
+	position: relative;
+	color: #74B229;
+}
+
+#rss form {
+	height: 38px;
+	/*width: 240px;*/
+	position: relative;
+}
+
+#rss label {
+	position: absolute;
+	top: 0;
+	right: 79px;
+	bottom: 0;
+	left: 0;
+	cursor: text;
+}
+
+#rss input[type=email] {
+	position: absolute;
+	top: 9px;
+	left: 0;
+	width: 140px;
+}
+
+#rss label:hover input[type=email] {
+	border-color: #444;
+	color: #999;
+}
+
+#rss label:hover input[type=email]:focus {
+	border-color: #555;
+	color: #ccc;
+}
+
+#rss input[type=submit] {
+	position: absolute;
+	top: 9px;
+	right: 9px;
+	width: 70px;
+	height: 20px;
+	left: 150px;
+	background: url(/img/search.png) no-repeat 0 0;
+}
+
 #rss a {
 	display: block;
 	line-height: 38px;
@@ -1017,6 +1070,7 @@ h1 {
 }
 
 /* @end */
+
 
 /* @group about */
 
