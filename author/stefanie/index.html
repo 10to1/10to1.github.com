@@ -1,0 +1,10 @@
+---
+layout: default
+title: Under the Hat - Author - Stefanie
+site_filter: Stefanie
+---
+{% for post in site.posts %}
+	{% if post.author == 'Stefanie' %}
+		{% include post.html %}
+	{% endif %}
+{% endfor %}
