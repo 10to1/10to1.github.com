@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance in iOS 5
-author: jelle
+author: Jelle
 category: cocoa
 ---
 
