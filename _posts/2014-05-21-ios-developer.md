@@ -18,7 +18,7 @@ Om de groei in die nieuwe, internationale context te ondersteunen, zijn wij op z
 
 10to1 is gestart door developers, en development is wat wij doen. We geloven dat goede software ontwikkeling het verschil maakt tussen een prachtig project en een mislukt project. Die visie willen wij waarmaken. Daarvoor rekenen we op jou.
 
-We zoeken dus een developer die graag wil leren, en die graag goede software neerzet. Da's, wat ons betreft, de definitie van "developer", quoi. Als je al wat ervaring heb in iOS, is dat mooi meegenomen.
+We zoeken dus een developer die graag wil leren, en die graag goede software neerzet. Da's, wat ons betreft, de definitie van "developer", quoi. Je hebt al ervaring in development, en als je al wat ervaring heb in iOS, is dat mooi meegenomen.
 
 ### Wat hebben we jou te bieden?
 
