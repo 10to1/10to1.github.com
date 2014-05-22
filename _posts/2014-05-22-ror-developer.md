@@ -24,7 +24,7 @@ We zoeken dus een developer die graag wil leren, en die graag goede software nee
 
 Vanzelfsprekend word je op een fatsoenlijke manier betaald, kan je rekenen op een smartphone, etc etc.
 
-Wat belangrijker is: we zijn als 10to1 als één van de eersten in België begonnen met de ontwikkeling van mobile apps. Elke goede mobile app heeft echter een sublieme web backend. Daarvoor gebruiken wij sinds het begin Ruby on Rails. We kennen de ins and outs – en jij kan die ook komen leren.
+Wat belangrijker is: we zijn als 10to1 als één van de eersten in België begonnen met de ontwikkeling van mobile apps. Elke goede mobile app heeft echter een sublieme web backend. Daarvoor gebruiken wij sinds het begin Ruby on Rails. We kennen de ins and outs – en jij kan die ook komen leren. Of, nog beter: jij mag ons iets komen bijleren.
 
 Wij bieden je een omgeving waarin je veel kan leren, waarin je kan reizen indien je dat wil, en waarin je je goed voelt.
 
