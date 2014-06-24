@@ -1,0 +1,10 @@
+---
+layout: default
+title: Under the Hat - Author - Geert
+site_filter: Geert
+---
+{% for post in site.posts %}
+	{% if post.author == 'Geert' %}
+		{% include post.html %}
+	{% endif %}
+{% endfor %}
