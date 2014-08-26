@@ -21,4 +21,4 @@ Wolvenberg contacted 10to1, and we built the mobile (iPhone) app and the (web) b
 ![screenshot](/img/portfolio/wolvenberg/placeit.jpg)
 
 
-> Quote here – Mark Heylen, Wolvenberg
+> De samenwerking met 10-to-1 verliep erg prettig. Ze begrepen snel wat we wilden realiseren en maakten een goede app die dit weergaf. – Mark Heylen, Wolvenberg
