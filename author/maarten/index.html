@@ -1,0 +1,10 @@
+---
+layout: default
+title: Under the Hat - Author - Maarten
+site_filter: Maarten
+---
+{% for post in site.posts %}
+	{% if post.author == 'Maarten' %}
+		{% include post.html %}
+	{% endif %}
+{% endfor %}

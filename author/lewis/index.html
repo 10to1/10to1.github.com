@@ -1,0 +1,10 @@
+---
+layout: default
+title: Under the Hat - Author - Lewis
+site_filter: Lewis
+---
+{% for post in site.posts %}
+	{% if post.author == 'Lewis' %}
+		{% include post.html %}
+	{% endif %}
+{% endfor %}
