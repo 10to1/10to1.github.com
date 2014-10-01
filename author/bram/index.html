@@ -1,0 +1,10 @@
+---
+layout: default
+title: Under the Hat - Author - Bram
+site_filter: Bram
+---
+{% for post in site.posts %}
+	{% if post.author == 'Bram' %}
+		{% include post.html %}
+	{% endif %}
+{% endfor %}
