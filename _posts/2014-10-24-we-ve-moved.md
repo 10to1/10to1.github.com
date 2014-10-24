@@ -7,7 +7,7 @@ category: general
 
 Ouf. That's been a busy week. So busy, that I even haven't had the time to tell you that 10to1 has moved.
 
-<img src="https://www.dropbox.com/s/0y7xw3yv50ydf44/FB_Header.png?raw=1" width='450'/>
+<a href='https://www.facebook.com/WillemPirquin.be/photos/a.117644745018724.19557.115192035263995/651162345000292/?type=1&notif_t=like'><img src="https://www.dropbox.com/s/0y7xw3yv50ydf44/FB_Header.png?raw=1" width='450'/></a>
 
 Back in 2011, at our last move, we thought it was important to be reachable by car. What we didn't think about was to be reachable by public transport. Big mistake – a lot of people would like to come to work by train or bus, but that wasn't possible.
 
