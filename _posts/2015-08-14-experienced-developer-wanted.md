@@ -7,7 +7,7 @@ category: general
 
 10to1 is part of Epi-use since [little over a year](http://blog.10to1.be/general/2013/03/27/business-developer-gezocht/) now. We've spent the last year aligning our businesses. 10to1 is ready to grow its business further in B2B mobile apps.
 
-To support this growth, we're looking for an experienced developer. If you apply for this job, you will be designing, programming and maintaining web and mobile apps. You will also have to coaching junior developers. Together with the project manager, you'll interact with our customers.
+To support this growth, we're looking for an experienced developer. If you apply for this job, you will be designing, programming and maintaining web and mobile apps. You will also have to coach junior developers. Together with the project manager, you'll interact with our customers.
 
 We're looking for experience in these fields:
 
