@@ -32,6 +32,6 @@ We offer you
 * benefits
 * oh, and a salary :)
 
-The reason 10to1 was started, was to create an environment were people are happy (which was logical at that time, because in the beginning, there were only the 2 founders). We've maintained that mission ever since – and this is shared by our mother company EPI-USE. You, too, can enjoy this.
+The reason 10to1 was started, was to create an environment were people are happy (which was logical at that time, because in the beginning, there were only the 2 founders). We've maintained that mission ever since &em; and this is shared by our mother company EPI-USE. You, too, can enjoy this.
 
 Want to talk? Send a mail to [jobs@10to1.be](mailto:jobs@10to1.be) or call Tom at [+32 475 28 17 62](callto:+32 475 28 17 62) !
