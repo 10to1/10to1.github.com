@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Wanted: experienced iOS/Android/Ruby on Rails developer
+title: Experienced Developer Wanted
 author: Tom
 category: general
 ---
