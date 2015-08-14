@@ -10,6 +10,7 @@ category: general
 To support this growth, we're looking for an experienced developer. If you apply for this job, you will be designing, programming and maintaining web and mobile apps. You will also have to coaching junior developers. Together with the project manager, you'll interact with our customers.
 
 We're looking for experience in these fields:
+
 * Programming
 * iOS
 * Android
@@ -21,6 +22,7 @@ We're looking for experience in these fields:
 You would work in a relatively young team, all people who are passionate about their job and who want to deliver the best code possible.
 
 We offer you
+
 * a great environment
 * the opportunity to learn from experienced people
 * the opportunity to learn from coaching less experienced people
@@ -30,6 +32,6 @@ We offer you
 * benefits
 * oh, and a salary :)
 
-The reason 10to1 was started, was to create an environment were people are happy (which was logical at that time, because in the beginning, there were only the 2 founders). We've maintained that mission ever since – and this is shared by our mother company EPI-USE.
+The reason 10to1 was started, was to create an environment were people are happy (which was logical at that time, because in the beginning, there were only the 2 founders). We've maintained that mission ever since – and this is shared by our mother company EPI-USE. You, too, can enjoy this.
 
 Want to talk? Send a mail to [jobs@10to1.be](mailto:jobs@10to1.be) or call Tom at [+32 475 28 17 62](callto:+32 475 28 17 62)!
