@@ -1,5 +1,6 @@
 permalink: pretty
 paginate: 5
 encoding: UTF-8
-highlighter: pygments
+highlighter: rouge
 markdown: redcarpet
+gems: [jekyll-paginate]
