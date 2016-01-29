@@ -34,7 +34,12 @@ del {
 }
 
 input[type="submit"] {
+	appearance: none;
 	-webkit-appearance: none;
+	-moz-appearance: none;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
 }
 
 /* @group default */
