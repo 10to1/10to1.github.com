@@ -33,6 +33,10 @@ del {
 	text-decoration: line-through;
 }
 
+input[type="submit"] {
+	-webkit-appearance: none;
+}
+
 /* @group default */
 
 /* @group body */
