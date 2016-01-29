@@ -1,0 +1,10 @@
+---
+layout: default
+title: Under the Hat - Author - Filip Berten
+site_filter: Filip Berten
+---
+{% for post in site.posts %}
+  {% if post.author == 'Filip Berten' %}
+    {% include post.html %}
+  {% endif %}
+{% endfor %}

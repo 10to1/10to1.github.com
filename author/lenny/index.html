@@ -1,0 +1,10 @@
+---
+layout: default
+title: Under the Hat - Author - Lenny
+site_filter: Lenny
+---
+{% for post in site.posts %}
+	{% if post.author == 'Lenny' %}
+		{% include post.html %}
+	{% endif %}
+{% endfor %}

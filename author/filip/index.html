@@ -1,0 +1,10 @@
+---
+layout: default
+title: Under the Hat - Author - Filip
+site_filter: Filip
+---
+{% for post in site.posts %}
+	{% if post.author == 'Filip' %}
+		{% include post.html %}
+	{% endif %}
+{% endfor %}
