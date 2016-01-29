@@ -2,9 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>{{ page.title }}</title>
 		<link rel="stylesheet" href="/css/master.css" type="text/css" />
 		<link rel="stylesheet" href="/css/syntax.css" type="text/css" />
+		<link rel="stylesheet" href="/css/responsive.css">
+		<script src="/js/jquery-1.2.6.min.js" type="text/javascript"></script>
+    <script src="/js/document.js" type="text/javascript"></script>
+    <link rel="shortcut icon" href="favicon.ico" />
 		<link href="http://feeds.feedburner.com/UnderTheHat-10to1" rel="alternate" title="Under the Hat - A weblog written by 10to1" type="application/atom+xml" />
 
 		<script type="text/javascript">
@@ -24,193 +29,266 @@
 
 	</head>
 	<body>
+
+		<header>
+      <div class="elephant-banner group">
+        <div class="elephant1"><a href="http://www.groupelephant.com/overview.html" target="_blank"><img src="http://epiuse.com/images/Group_Elephant_Logo.svg" class="elephant-link1"></a>part of the groupelephant.com family</div>
+        <div class="elephant2"><span>beyond corporate purpose</span><a href="http://www.groupelephant.com" target="_blank"><img src="http://epiuse.com/images/ERP_Logo.svg" class="elephant-link2" width="27px"></a>
+        </div>
+      </div>
+      <a href="en/index.html" class="language-choice">
+        <div class="switch">
+          <span id="selected" class="left">NL</span>
+          <span class="right">EN</span>
+        </div>
+      </a>
+      <div class="logo bg-pattern">
+        <img class="logo-name" src="/img/logo_name.png" alt="Logo 10to1">
+      </div>
+      <nav id="navigation">
+        <a class="border-right" href="http://www.10to1.be/index.html">Wie zijn we?</a>
+        <a class="border-right" href="http://www.10to1.be/projects.html">Projecten</a>
+        <a class="border-right active">Blog</a>
+        <a href="http://www.10to1.be/contact.html">Contact</a>
+      </nav>
+    </header>
+
 		<script>
 			var disqus_iframe_css = "http://10to1.github.com/css/disqus.css";
 		</script>
-		<p id="goto10to1"><a href="http://10to1.be/en" rel="home">Return to 10to1.be</a></p>
 		<div id="wrapper">
-			<h1>Under the Hat</h1>
-			<hr />
-			<div id="content">
-				{% if page.site_filter %}
-					{% if page.site_filter == 'Koen' or page.site_filter == 'Tom' or page.site_filter == 'Piet' or page.site_filter == 'Jelle' or page.site_filter == 'Sander' or page.site_filter == 'Dottom' or page.site_filter == 'Bob' or page.site_filter == 'TW' or page.site_filter == 'Steven' or page.site_filter == 'Sophie' or page.site_filter == 'Evert' or page.site_filter == 'Stefanie' %}
-						<p id="filter">All posts by <a href="/author/{{page.site_filter | downcase }}">{{page.site_filter}}</a></p>
-					{% else %}
-					<p id="filter">Category: <a href="/{{page.site_filter | downcase }}">{{page.site_filter}}</a></p>
-					{% endif %}
-				{% endif %}
-				{{ content }}
-				{% if page.site_filter == null and paginator.total_pages > 1 %}
-				<ul id="paging">
-					{% if paginator.next_page %}
-					<li id="count">Page <strong>{{ paginator.next_page | minus:1 }}</strong> of <strong>{{ paginator.total_pages }}</strong></li>
-					{% else %}
-					<li id="count">Page <strong>{{ paginator.total_pages }}</strong> of <strong>{{ paginator.total_pages }}</strong></li>
-					{% endif %}
-					{% if paginator.previous_page %}
-					<li id="newest"><a href="/" title="Go to newest articles">Newest articles</a></li>
-						{% if paginator.previous_page > 1 %}
-						<li id="newer"><a href="/page{{ paginator.previous_page }}" title="Go to newer articles">Newer articles</a></li>
-						{% else %}
-						<li id="newer"><a href="/" title="Go to newer articles">Newer articles</a></li>
+			<div class="centered-content-row">
+				<div class="content">
+					<div id="content" class="">
+						{% if page.site_filter %}
+							{% if page.site_filter == 'Koen' or page.site_filter == 'Tom' or page.site_filter == 'Piet' or page.site_filter == 'Jelle' or page.site_filter == 'Sander' or page.site_filter == 'Dottom' or page.site_filter == 'Bob' or page.site_filter == 'TW' or page.site_filter == 'Steven' or page.site_filter == 'Sophie' or page.site_filter == 'Evert' or page.site_filter == 'Stefanie' %}
+								<p id="filter">All posts by <a href="/author/{{page.site_filter | downcase }}">{{page.site_filter}}</a></p>
+							{% else %}
+							<p id="filter">Category: <a href="/{{page.site_filter | downcase }}">{{page.site_filter}}</a></p>
+							{% endif %}
 						{% endif %}
-					{% else %}
-					<li id="newest"><a class="disabled" title="Go to newest articles">Newest articles</a></li>
-					<li id="newer"><a class="disabled" title="Go to newer articles">Newer articles</a></li>
-					{% endif %}
-					{% if paginator.next_page %}
-					<li id="oldest"><a href="/page{{ paginator.total_pages }}" title="Go to oldest articles">Oldest articles</a></li>
-					<li id="older"><a href="/page{{ paginator.next_page }}" title="Go to older articles">Older articles</a></li>
-					{% else %}
-					<li id="oldest"><a class="disabled" title="Go to oldest articles">Oldest articles</a></li>
-					<li id="older"><a class="disabled" title="Go to older articles">Older articles</a></li>
-					{% endif %}
-				</ul>
-				{% endif %}
-			</div>
-			<hr />
-			<div id="sec-content">
-				<a href="/"><img id="logo" src="/img/logo.png" alt="Under the Hat logo" /></a>
-				<div class="node" id="about">
-					<h2>About this blog</h2>
-					<p>You’re reading <strong>Under the Hat</strong>, a weblog written by <a href="http://10to1.be/en">10to1</a>.</p>
-				</div>
-				<div class="node" id="search">
-					<h2>Search</h2>
-					<form action="http://www.google.com/cse" id="cse-search-box">
-						<input type="hidden" name="cx" value="006169093033817144292:jo-onocmvqy" />
-						<input type="hidden" name="ie" value="UTF-8" />
-						<p>
-							<label><input type="text" name="q" /></label>
-							<input type="submit" name="sa" value="Search" />
-						</p>
-					</form>
-				</div>
-				<div class="node" id="rss">
-					<h2>Subscribe</h2>
-					<ul>
-						<li><a href="http://feeds.feedburner.com/UnderTheHat-10to1" class='rss'>Subscribe to our RSS-feed</a></li>
-						<li><a href='http://twitter.com/10to1'>Follow us on Twitter</a></li>
-						<li><a href='http://facebook.com/10to1'>Follow us on Facebook</a></li>
-						<li class='newslttr'>
-							Sign up for our newsletter
-							<form action="http://10to1.us2.list-manage2.com/subscribe/post?u=fc4105fc8c7f0ebc4874ff8ab&amp;id=dc4d9b062d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
-
-									<label><input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL"></label>
-									<input type="submit" value="Sign up" name="subscribe" id="mc-embedded-subscribe" class="button">
-
-							</form>
-						</li>
-					</ul>
-				</div>
-				<div class="node" id="who">
-					<h2>Who’s got the mic?</h2>
-					<ul>
-						<li>
-							<strong>Tom Klaasen</strong>
-							<em>Architecture &amp; Design</em>
-							<a href="/author/tom">Posts written by Tom</a>
-							<img src="/img/tom.png" alt="Picture of Tom" />
-						</li>
-						<li>
-							<strong>Koen Van Der Auwera</strong>
-							<em>Technical Guru</em>
-							<a href="/author/koen">Posts written by Koen</a>
-							<img src="/img/koen.png" alt="Picture of Koen" />
-						</li>
-						<li>
-							<strong>Piet Jaspers</strong>
-							<em>Glorified Typist</em>
-							<a href="/author/piet">Posts written by Piet</a>
-							<a href="http://blog.10to1.be/team/2011/09/30/team-piet/"><img src="/img/piet.png" alt="Picture of Piet" /></a>
-						</li>
-						<li>
-							<strong>Bob Van Landuyt</strong>
-							<em>Developer</em>
-							<a href="/author/bob">Posts written by Bob</a>
-							<a href="http://blog.10to1.be/team/2011/11/15/team-bob/"><img src="/img/bob.png" alt="Picture of Bob" /></a>
-						</li>
-						<li>
-							<strong>Sophie Nauwelaerts</strong>
-							<em>Project manager</em>
-							<a href="/author/sophie">Posts written by Sophie</a>
-							<img src="/img/sophie.png" alt="Picture of Sophie" />
-						</li>
-						<li>
-							<strong>Gregory Lambrechts</strong>
-							<em>Developer</em>
-							<a href="/author/gregory">Posts written by Gregory</a>
-							<img src="/img/gregory.png" alt="Picture of Gregory" />
-						</li>
-						<li>
-							<strong>Nathan de Witte</strong>
-							<em>Developer</em>
-							<a href="/author/nathan">Posts written by Nathan</a>
-							<img src="/img/nathan.png" alt="Picture of Nathan" />
-						</li>
-						<li>
-							<strong>Lewis Fidlers</strong>
-							<em>Developer</em>
-							<a href="/author/lewis">Posts written by Lewis</a>
-							<img src="/img/lewis.png" alt="Picture of Lewis" />
-						</li>
-						<li>
-							<strong>Maarten Vandendries</strong>
-							<em>Developer</em>
-							<a href="/author/maarten">Posts written by Maarten</a>
-							<img src="/img/maarten.png" alt="Picture of Maarten" />
-						</li>
-						<li>
-							<strong>Bram Jans</strong>
-							<em>Developer</em>
-							<a href="/author/bram">Posts written by Bram</a>
-							<img src="/img/bram.png" alt="Picture of Bram" />
-						</li>
-					</ul>
-				</div>
-				<div class="node" id="projects">
-					<h2>Our projects</h2>
-					<ul>
-						<li id="eetidee"><a href="http://eetidee.be/"><strong>EetIdee</strong> What’s for dinner?</a></li>
-						<li id="twistory"><a href="http://twistory.net/"><strong>Twistory</strong> Twitter + History</a></li>
-					</ul>
-					<p>More? Check out our <a href="http://blog.10to1.be/portfolio">portfolio</a>!</p>
-				</div>
-				<div class="node" id="categories">
-					<h2>Categories</h2>
-					<ul>
-						<li><a href="/cocoa">Cocoa <small>{{ site.categories.cocoa | size }}</small></a></li>
-						<li><a href="/general">General <small>{{ site.categories.general | size }}</small></a></li>
-						<li><a href="/ruby">Ruby <small>{{ site.categories.ruby | size }}</small></a></li>
-						<li><a href="/rails">Rails <small>{{ site.categories.rails | size }}</small></a></li>
-						<li><a href="/portfolio">Portfolio <small>{{ site.categories.portfolio | size }}</small></a></li>
-						<li><a href="/press_releases">Press releases <small>{{ site.categories.press_releases | size }}</small></a></li>
-						<li><a href="/team">Team <small>{{ site.categories.team | size }}</small></a></li>
-					</ul>
-				</div>
-				<!-- <div class="node" id="archive">
-					<h2>Archive</h2>
-					<ul>
-						<li>
-							<a class="year" href="archive.html">2009</a>
+						{{ content }}
+						{% if page.site_filter == null and paginator.total_pages > 1 %}
+						<ul id="paging">
+							{% if paginator.next_page %}
+							<li id="count">Page <strong>{{ paginator.next_page | minus:1 }}</strong> of <strong>{{ paginator.total_pages }}</strong></li>
+							{% else %}
+							<li id="count">Page <strong>{{ paginator.total_pages }}</strong> of <strong>{{ paginator.total_pages }}</strong></li>
+							{% endif %}
+							{% if paginator.previous_page %}
+							<li id="newest"><a href="/" title="Go to newest articles">Newest articles</a></li>
+								{% if paginator.previous_page > 1 %}
+								<li id="newer"><a href="/page{{ paginator.previous_page }}" title="Go to newer articles">Newer articles</a></li>
+								{% else %}
+								<li id="newer"><a href="/" title="Go to newer articles">Newer articles</a></li>
+								{% endif %}
+							{% else %}
+							<li id="newest"><a class="disabled" title="Go to newest articles">Newest articles</a></li>
+							<li id="newer"><a class="disabled" title="Go to newer articles">Newer articles</a></li>
+							{% endif %}
+							{% if paginator.next_page %}
+							<li id="oldest"><a href="/page{{ paginator.total_pages }}" title="Go to oldest articles">Oldest articles</a></li>
+							<li id="older"><a href="/page{{ paginator.next_page }}" title="Go to older articles">Older articles</a></li>
+							{% else %}
+							<li id="oldest"><a class="disabled" title="Go to oldest articles">Oldest articles</a></li>
+							<li id="older"><a class="disabled" title="Go to older articles">Older articles</a></li>
+							{% endif %}
+						</ul>
+						{% endif %}
+					</div>
+					<div id="sec-content" class="">
+						<div class="node" id="who">
+							<h2>Who’s got the mic?</h2>
 							<ul>
-								<li><a href="archive.html">September <small>1</small></a></li>
-								<li><a href="archive.html">August <small>2</small></a></li>
-								<li><a href="archive.html">July <small>5</small></a></li>
-								<li><a href="archive.html">June <small>2</small></a></li>
+								<li class="clearfix">
+									<a href="/author/tom">
+                    <img src="/img/tom.png" alt="Picture of Tom" />
+									  <div class="info">
+                      <p class="name">Tom Klaasen</p>
+									    <p class="function">Architecture &amp; Design</p>
+                    </div>
+									</a>
+								</li>
+								<li class="clearfix">
+									<a href="/author/koen">
+                    <img src="/img/koen.png" alt="Picture of Koen" />
+									  <div class="info">
+                      <p class="name">Koen Van Der Auwera</p>
+									    <p class="function">Technical Guru</p>
+                    </div>
+									</a>
+								</li>
+								<li class="clearfix">
+									<a href="/author/piet">
+                    <img src="/img/piet.png" alt="Picture of Piet" />
+									  <div class="info">
+                      <p class="name">Piet Jaspers</p>
+									    <p class="function">Glorified Typist</p>
+                    </div>
+									</a>
+								</li>
+								<li class="clearfix">
+                  <a href="/author/bob">
+									  <img src="/img/bob.png" alt="Picture of Bob" />
+                    <div class="info">
+									    <p class="name">Bob Van Landuyt</p>
+									    <p class="function">Developer</p>
+                    </div>
+									</a>
+								</li>
+								<li class="clearfix">
+									<a href="/author/sophie">
+                    <img src="/img/sophie.png" alt="Picture of Sophie" />
+									  <div class="info">
+                      <p class="name">Sophie Nauwelaerts</p>
+									    <p class="function">Project manager</p>
+                    </div>
+									</a>
+								</li>
+								<li class="clearfix">
+									<a href="/author/nathan">
+                    <img src="/img/nathan.png" alt="Picture of Nathan" />
+									  <div class="info">
+                      <p class="name">Nathan de Witte</p>
+									    <p class="function">Developer</p>
+                    </div>
+									</a>
+								</li>
+								<li class="clearfix">
+									<a href="/author/lewis">
+                    <img src="/img/lewis.png" alt="Picture of Lewis" />
+									  <div class="info">
+                      <p class="name">Lewis Fidlers</p>
+									    <p class="function">Developer</p>
+                    </div>
+									</a>
+								</li>
+              </ul>
+              <ul>
+								<li class="clearfix">
+									<a href="/author/maarten">
+                    <img src="/img/maarten.png" alt="Picture of Maarten" />
+									  <div class="info">
+                      <p class="name">Maarten Vandendries</p>
+									    <p class="function">Developer</p>
+                    </div>
+									</a>
+								</li>
+								<li class="clearfix">
+									<a href="/author/bram">
+                    <img src="/img/bram.png" alt="Picture of Bram" />
+									  <div class="info">
+                      <p class="name">Bram Jans</p>
+									    <p class="function">Developer</p>
+                    </div>
+									</a>
+								</li>
+                <li class="clearfix">
+                  <a href="/author/toon">
+                    <img src="/img/toon.png" alt="Picture of Toon" />
+                    <div class="info">
+                      <p class="name">Toon Claes</p>
+                      <p class="function">Developer</p>
+                      </div>
+                  </a>
+                </li>
+                <li class="clearfix">
+                  <a href="/author/lenny">
+                    <img src="/img/lenny.png" alt="Picture of Lenny" />
+                    <div class="info">
+                      <p class="name">Lenny Donnez</p>
+                      <p class="function">Developer</p>
+                      </div>
+                  </a>
+                </li>
+                <li class="clearfix">
+                  <a href="/author/renusha">
+                    <img src="/img/profile-blank.png" alt="Picture of Renusha" />
+                    <div class="info">
+                      <p class="name">Renusha Harpal</p>
+                      <p class="function">Office Manager</p>
+                      </div>
+                  </a>
+                </li>
+                <li class="clearfix">
+                  <a href="/author/filip">
+                    <img src="/img/filip.png" alt="Picture of Filip" />
+                    <div class="info">
+                      <p class="name">Filip Vanderstappen</p>
+                      <p class="function">Developer</p>
+                      </div>
+                  </a>
+                </li>
+                <li class="clearfix">
+                  <a href="/author/filipberten">
+                    <img src="/img/filipberten.png" alt="Picture of Filip Berten" />
+                    <div class="info">
+                      <p class="name">Filip Berten</p>
+                      <p class="function">Mobile Business Advisor</p>
+                      </div>
+                  </a>
+                </li>
 							</ul>
-						</li>
-						<li>
-							<a class="year" href="archive.html">2008</a>
+						</div>
+						<div class="node" id="categories">
+							<h2>Categories</h2>
 							<ul>
-								<li><a href="archive.html">May <small>4</small></a></li>
-								<li><a href="archive.html">April <small>7</small></a></li>
+								<li><a href="/cocoa">Cocoa <small>{{ site.categories.cocoa | size }}</small></a></li>
+								<li><a href="/ruby">Ruby <small>{{ site.categories.ruby | size }}</small></a></li>
+								<li><a href="/rails">Rails <small>{{ site.categories.rails | size }}</small></a></li>
+                <li><a href="/press_releases">Press releases <small>{{ site.categories.press_releases | size }}</small></a></li>
+                <li><a href="/general">General <small>{{ site.categories.general | size }}</small></a></li>
+                <li><a href="/team">Team <small>{{ site.categories.team | size }}</small></a></li>
+								<li><a href="/portfolio">Portfolio <small>{{ site.categories.portfolio | size }}</small></a></li>
 							</ul>
-						</li>
-					</ul>
-				</div> -->
+						</div>
+            <div class="node" id="search">
+              <h2>Search</h2>
+              <form action="http://www.google.com/cse" id="cse-search-box">
+                <input type="hidden" name="cx" value="006169093033817144292:jo-onocmvqy" />
+                <input type="hidden" name="ie" value="UTF-8" />
+                <p>
+                  <label><input type="text" name="q" placeholder="Keyword..." /></label>
+                  <input type="submit" class="submit" name="sa" value="Search" />
+                </p>
+              </form>
+            </div>
+            <div class="node social">
+              <a href="http://feeds.feedburner.com/UnderTheHat-10to1" class='rss'><img src="/img/rss.svg"></a>
+              <a href='http://twitter.com/10to1'><img src="/img/twitter.svg"></a>
+              <a href='http://facebook.com/10to1'><img src="/img/facebook.svg"></a>
+            </div>
+					</div>
+
 			</div>
 		</div>
+		<footer class="bg-pattern">
+      <h2>Contact</h2>
+      <div class="cols group">
+        <div class="col-1">
+          <img class="name-logo-small" src="/img/name-logo-small.png" alt="10to1"/> BVBA<br/>
+          <a href="https://www.google.com/maps/place/Hospitaalplein+11,+2018+Antwerpen+Belgium" target="_blank">
+            Hospitaalplein 11<br/>
+            2018 Antwerpen<br/>
+            België
+          </a><br/>
+          <a href="tel://+32-(0)-3-369-10-21">+32 3 369 10 21</a><br/>
+          info@10to1.be
+        </div>
+        <div class="col-2">
+          <img src="http://epiuse.com/images/Group_Elephant_Logo.svg" class="elephant-group-logo" alt="part of elephant-group">
+          <p>Vragen of interesse?</p>
+          <a class="callout" href="http://10to1/contact.html">Contacteer ons</a>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; <b>10to1</b> BVBA 2006 -
+          <script type="text/javascript">
+            document.write(new Date().getFullYear());
+          </script>
+        </p>
+      </div>
+    </footer>
 
 		<script type="text/javascript">
 		//<![CDATA[

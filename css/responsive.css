@@ -1,0 +1,187 @@
+@import "style.css";
+
+
+@media (min-width : 1000px) {
+
+  body {
+    font-size: 1.2em;
+  }
+
+  #content,
+  #sec-content {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  #content {
+    width: 65%;
+  }
+
+  #sec-content {
+    width: 35%;
+    margin-left: -4px;
+    margin-top: 0;
+  }
+
+  #who ul {
+    display: block;
+    margin: 0;
+  }
+
+}
+
+@media (max-width : 480px) {
+
+  body {
+    font-size: 1em;
+  }
+
+  .centered-content-row {
+    padding: 5% 5%;
+  }
+
+  .centered-content-row h1 {
+    font-size: 1.25em;
+    font-weight: 300;
+  }
+
+  .centered-content-row p {
+    font-size: 0.9em;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+  #container {
+    border: none;
+  }
+
+  .container {
+    margin: 0;
+  }
+
+  form.wufoo{
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .bg-two{
+    background-position: top;
+  }
+
+  .project {
+    margin-bottom: 20px;
+  }
+
+  .project h3 {
+    padding-top: 0;
+  }
+
+  #navigation {
+    position: static;
+  }
+
+  #navigation a {
+    font-size: 0.625em;
+    padding: 10px 0;
+    font-weight: 400;
+  }
+
+  #navigation a:hover{
+    padding: 0;
+  }
+
+  header{
+    padding-top: 0;
+    border-bottom: 0;
+  }
+
+  .col-1, .col-2 {
+    font-weight: 300;
+    letter-spacing: 0;
+    float: none;
+    width: 100%;
+    text-align: center;
+    border: none;
+  }
+
+  .article {
+    padding-top: 21px;
+  }
+
+  .posted {
+    top: 0;
+    left: -5%;
+    width: 110%;
+    text-align: left;
+  }
+
+  .posted a {
+    display: inline-block;
+    width: 100%;
+    background-color: #F5F5F5;
+    padding-left: 5%;
+  }
+
+  .posted span.day,
+  .posted span.month,
+  .posted span.year{
+    display: inline-block;
+    font-size: 14px;
+    margin: 0;
+  }
+
+
+  .elephant-group-logo {
+    display: initial;
+    margin: 15px auto 0;
+  }
+
+  .elephant-banner {
+    max-height: 35px;
+    line-height: 36px;
+    position: static;
+  }
+
+  .elephant-link1, .elephant-link2 {
+    margin-top: 6px;
+    margin-left:10px;
+    margin-right:10px;
+    height: 25px;
+  }
+
+  .language-choice {
+    margin-top: 15px;
+    font-size: 0.9em;
+  }
+
+  .language-choice .switch {
+    margin: 4px 10px 4px 10px;
+  }
+
+  .logo{
+    padding-top: 55px;
+  }
+
+  .hide-element{
+    margin-top: 0;
+  }
+
+  .copyright {
+    margin-top: 10%;
+  }
+
+  #sec-content {
+    margin-left: 0;
+  }
+
+}
+
+@media (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  .logo, footer, .bg-pattern {
+    background-image: url('/img/cream_pixels_@2X.png');
+  }
+}
