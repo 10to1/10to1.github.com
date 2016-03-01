@@ -1,2 +1,2 @@
 # See http://jekyllrb.com/docs/drafts/
-jekyll serve --watch --drafts
+bundle exec jekyll serve --watch --drafts

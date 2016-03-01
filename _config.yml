@@ -4,3 +4,4 @@ encoding: UTF-8
 highlighter: rouge
 markdown: redcarpet
 gems: [jekyll-paginate]
+exclude: [vendor]
