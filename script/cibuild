@@ -1,0 +1,25 @@
+#! /usr/bin/env bash
+#
+# Stop on error and output every command before executing it
+set -ex
+
+echo "Tests started at..."
+date "+%H:%M:%S"
+
+export RAILS_ENV="test"
+export RACK_ENV="test"
+
+hostname
+ruby -v
+bundle install --local
+
+bundle exec jekyll build
+
+# In the long run we might be able to reenable these, but for now too many missing alt tags
+# to make it worthwile.
+#
+# So this checks:
+# - favicon in place
+# - Whether your internal script references are working
+# - Whether external scripts are loading
+bundle exec htmlproof ./_site --checks-to-ignore 'ImageCheck,LinkCheck,HtmlCheck' --disable-external --check-favicon

@@ -2,6 +2,6 @@ permalink: pretty
 paginate: 5
 encoding: UTF-8
 highlighter: rouge
-markdown: redcarpet
+markdown: kramdown
 gems: [jekyll-paginate]
 exclude: [vendor]
