@@ -1,0 +1,10 @@
+/* MailChimp Form Embed Code - Classic - 12/17/2015 v10.7 */
+#mc_embed_signup form {display:block; position:relative; text-align:center;}
+#mc_embed_signup input[type="email"] {background-color: #fff; border: 1px solid #ABB0B2;}
+#mc_embed_signup input[type="submit"] { margin-top: 10px; }
+
+#mc_embed_signup .mc-field-group {clear:left; position:relative; min-height:50px;}
+#mc_embed_signup .mc-field-group label {display:block; margin-bottom:3px;}
+#mc_embed_signup .mc-field-group input {display:block; width:100%; padding:8px 0; text-indent:2%;}
+#mc_embed_signup .clear {clear:both;}
+#mc-embedded-subscribe {clear:both; width:auto; display:block; margin:1em 0 1em 5%;}
