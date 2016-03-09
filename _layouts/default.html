@@ -1,36 +1,36 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>{{ page.title }}</title>
-		<link rel="stylesheet" href="/css/master.css" type="text/css" />
-		<link rel="stylesheet" href="/css/syntax.css" type="text/css" />
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/css/master.css" type="text/css" />
+    <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
     <link rel="stylesheet" href="/css/responsive.css" type="text/css" >
-		<link rel="stylesheet" href="/css/mailchimp.css" type="text/css" >
-		<script src="/js/jquery-1.2.6.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="/css/mailchimp.css" type="text/css" >
+    <script src="/js/jquery-1.2.6.min.js" type="text/javascript"></script>
     <script src="/js/document.js" type="text/javascript"></script>
     <link rel="shortcut icon" href="favicon.ico" />
-		<link href="http://feeds.feedburner.com/UnderTheHat-10to1" rel="alternate" title="Under the Hat - A weblog written by 10to1" type="application/atom+xml" />
-		<script type="text/javascript">
+    <link href="http://feeds.feedburner.com/UnderTheHat-10to1" rel="alternate" title="Under the Hat - A weblog written by 10to1" type="application/atom+xml" />
+    <script type="text/javascript">
 
-		  var _gaq = _gaq || [];
-		  _gaq.push(['_setAccount', 'UA-6360794-1']);
-		  _gaq.push(['_setDomainName', '10to1.be']);
-		  _gaq.push(['_trackPageview']);
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-6360794-1']);
+      _gaq.push(['_setDomainName', '10to1.be']);
+      _gaq.push(['_trackPageview']);
 
-		  (function() {
-		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		  })();
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
 
-		</script>
+    </script>
 
-	</head>
-	<body>
+  </head>
+  <body>
 
-		<header>
+    <header>
       <div class="elephant-banner group">
         <div class="elephant1"><a href="http://www.groupelephant.com/overview.html" target="_blank"><img src="http://epiuse.com/images/Group_Elephant_Logo.svg" class="elephant-link1"></a>part of the groupelephant.com family</div>
         <div class="elephant2"><span>beyond corporate purpose</span><a href="http://www.groupelephant.com" target="_blank"><img src="http://epiuse.com/images/ERP_Logo.svg" class="elephant-link2" width="27px"></a>
@@ -47,50 +47,50 @@
       </nav>
     </header>
 
-		<script>
-			var disqus_iframe_css = "http://10to1.github.com/css/disqus.css";
-		</script>
-		<div id="wrapper">
-			<div class="centered-content-row">
-				<div class="content">
-					<div id="content" class="">
-						{% if page.site_filter %}
-							{% if page.site_filter == 'Koen' or page.site_filter == 'Tom' or page.site_filter == 'Piet' or page.site_filter == 'Jelle' or page.site_filter == 'Sander' or page.site_filter == 'Dottom' or page.site_filter == 'Bob' or page.site_filter == 'TW' or page.site_filter == 'Steven' or page.site_filter == 'Sophie' or page.site_filter == 'Evert' or page.site_filter == 'Stefanie' %}
-								<p id="filter">All posts by <a href="/author/{{page.site_filter | downcase }}">{{page.site_filter}}</a></p>
-							{% else %}
-							<p id="filter">Category: <a href="/{{page.site_filter | downcase }}">{{page.site_filter}}</a></p>
-							{% endif %}
-						{% endif %}
-						{{ content }}
-						{% if page.site_filter == null and paginator.total_pages > 1 %}
-						<ul id="paging">
-							{% if paginator.next_page %}
-							<li id="count">Page <strong>{{ paginator.next_page | minus:1 }}</strong> of <strong>{{ paginator.total_pages }}</strong></li>
-							{% else %}
-							<li id="count">Page <strong>{{ paginator.total_pages }}</strong> of <strong>{{ paginator.total_pages }}</strong></li>
-							{% endif %}
-							{% if paginator.previous_page %}
-							<li id="newest"><a href="/" title="Go to newest articles">Newest articles</a></li>
-								{% if paginator.previous_page > 1 %}
-								<li id="newer"><a href="/page{{ paginator.previous_page }}" title="Go to newer articles">Newer articles</a></li>
-								{% else %}
-								<li id="newer"><a href="/" title="Go to newer articles">Newer articles</a></li>
-								{% endif %}
-							{% else %}
-							<li id="newest"><a class="disabled" title="Go to newest articles">Newest articles</a></li>
-							<li id="newer"><a class="disabled" title="Go to newer articles">Newer articles</a></li>
-							{% endif %}
-							{% if paginator.next_page %}
-							<li id="oldest"><a href="/page{{ paginator.total_pages }}" title="Go to oldest articles">Oldest articles</a></li>
-							<li id="older"><a href="/page{{ paginator.next_page }}" title="Go to older articles">Older articles</a></li>
-							{% else %}
-							<li id="oldest"><a class="disabled" title="Go to oldest articles">Oldest articles</a></li>
-							<li id="older"><a class="disabled" title="Go to older articles">Older articles</a></li>
-							{% endif %}
-						</ul>
-						{% endif %}
-					</div>
-					<div id="sec-content" class="">
+    <script>
+      var disqus_iframe_css = "http://10to1.github.com/css/disqus.css";
+    </script>
+    <div id="wrapper">
+      <div class="centered-content-row">
+        <div class="content">
+          <div id="content" class="">
+            {% if page.site_filter %}
+              {% if page.site_filter == 'Koen' or page.site_filter == 'Tom' or page.site_filter == 'Piet' or page.site_filter == 'Jelle' or page.site_filter == 'Sander' or page.site_filter == 'Dottom' or page.site_filter == 'Bob' or page.site_filter == 'TW' or page.site_filter == 'Steven' or page.site_filter == 'Sophie' or page.site_filter == 'Evert' or page.site_filter == 'Stefanie' %}
+                <p id="filter">All posts by <a href="/author/{{page.site_filter | downcase }}">{{page.site_filter}}</a></p>
+              {% else %}
+              <p id="filter">Category: <a href="/{{page.site_filter | downcase }}">{{page.site_filter}}</a></p>
+              {% endif %}
+            {% endif %}
+            {{ content }}
+            {% if page.site_filter == null and paginator.total_pages > 1 %}
+            <ul id="paging">
+              {% if paginator.next_page %}
+              <li id="count">Page <strong>{{ paginator.next_page | minus:1 }}</strong> of <strong>{{ paginator.total_pages }}</strong></li>
+              {% else %}
+              <li id="count">Page <strong>{{ paginator.total_pages }}</strong> of <strong>{{ paginator.total_pages }}</strong></li>
+              {% endif %}
+              {% if paginator.previous_page %}
+              <li id="newest"><a href="/" title="Go to newest articles">Newest articles</a></li>
+                {% if paginator.previous_page > 1 %}
+                <li id="newer"><a href="/page{{ paginator.previous_page }}" title="Go to newer articles">Newer articles</a></li>
+                {% else %}
+                <li id="newer"><a href="/" title="Go to newer articles">Newer articles</a></li>
+                {% endif %}
+              {% else %}
+              <li id="newest"><a class="disabled" title="Go to newest articles">Newest articles</a></li>
+              <li id="newer"><a class="disabled" title="Go to newer articles">Newer articles</a></li>
+              {% endif %}
+              {% if paginator.next_page %}
+              <li id="oldest"><a href="/page{{ paginator.total_pages }}" title="Go to oldest articles">Oldest articles</a></li>
+              <li id="older"><a href="/page{{ paginator.next_page }}" title="Go to older articles">Older articles</a></li>
+              {% else %}
+              <li id="oldest"><a class="disabled" title="Go to oldest articles">Oldest articles</a></li>
+              <li id="older"><a class="disabled" title="Go to older articles">Older articles</a></li>
+              {% endif %}
+            </ul>
+            {% endif %}
+          </div>
+          <div id="sec-content" class="">
             <!-- Begin MailChimp Signup Form -->
             <div class="node" >
               <h2>Sign up for our newsletter</h2>
@@ -116,92 +116,92 @@
               </div>
             </div>
 
-						<div class="node" id="who">
-							<h2>Who’s got the mic?</h2>
-							<ul>
-								<li class="clearfix">
-									<a href="/author/tom">
+            <div class="node" id="who">
+              <h2>Who’s got the mic?</h2>
+              <ul>
+                <li class="clearfix">
+                  <a href="/author/tom">
                     <img src="/img/tom.png" alt="Picture of Tom" />
-									  <div class="info">
-                      <p class="name">Tom Klaasen</p>
-									    <p class="function">Architecture &amp; Design</p>
-                    </div>
-									</a>
-								</li>
-								<li class="clearfix">
-									<a href="/author/koen">
-                    <img src="/img/koen.png" alt="Picture of Koen" />
-									  <div class="info">
-                      <p class="name">Koen Van Der Auwera</p>
-									    <p class="function">Technical Guru</p>
-                    </div>
-									</a>
-								</li>
-								<li class="clearfix">
-									<a href="/author/piet">
-                    <img src="/img/piet.png" alt="Picture of Piet" />
-									  <div class="info">
-                      <p class="name">Piet Jaspers</p>
-									    <p class="function">Glorified Typist</p>
-                    </div>
-									</a>
-								</li>
-								<li class="clearfix">
-                  <a href="/author/bob">
-									  <img src="/img/bob.png" alt="Picture of Bob" />
                     <div class="info">
-									    <p class="name">Bob Van Landuyt</p>
-									    <p class="function">Developer</p>
+                      <p class="name">Tom Klaasen</p>
+                      <p class="function">Architecture &amp; Design</p>
                     </div>
-									</a>
-								</li>
-								<li class="clearfix">
-									<a href="/author/sophie">
+                  </a>
+                </li>
+                <li class="clearfix">
+                  <a href="/author/koen">
+                    <img src="/img/koen.png" alt="Picture of Koen" />
+                    <div class="info">
+                      <p class="name">Koen Van Der Auwera</p>
+                      <p class="function">Technical Guru</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="clearfix">
+                  <a href="/author/piet">
+                    <img src="/img/piet.png" alt="Picture of Piet" />
+                    <div class="info">
+                      <p class="name">Piet Jaspers</p>
+                      <p class="function">Glorified Typist</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="clearfix">
+                  <a href="/author/bob">
+                    <img src="/img/bob.png" alt="Picture of Bob" />
+                    <div class="info">
+                      <p class="name">Bob Van Landuyt</p>
+                      <p class="function">Developer</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="clearfix">
+                  <a href="/author/sophie">
                     <img src="/img/sophie.png" alt="Picture of Sophie" />
-									  <div class="info">
+                    <div class="info">
                       <p class="name">Sophie Nauwelaerts</p>
-									    <p class="function">Project manager</p>
+                      <p class="function">Project manager</p>
                     </div>
-									</a>
-								</li>
-								<li class="clearfix">
-									<a href="/author/nathan">
+                  </a>
+                </li>
+                <li class="clearfix">
+                  <a href="/author/nathan">
                     <img src="/img/nathan.png" alt="Picture of Nathan" />
-									  <div class="info">
+                    <div class="info">
                       <p class="name">Nathan de Witte</p>
-									    <p class="function">Developer</p>
+                      <p class="function">Developer</p>
                     </div>
-									</a>
-								</li>
-								<li class="clearfix">
-									<a href="/author/lewis">
+                  </a>
+                </li>
+                <li class="clearfix">
+                  <a href="/author/lewis">
                     <img src="/img/lewis.png" alt="Picture of Lewis" />
-									  <div class="info">
+                    <div class="info">
                       <p class="name">Lewis Fidlers</p>
-									    <p class="function">Developer</p>
+                      <p class="function">Developer</p>
                     </div>
-									</a>
-								</li>
+                  </a>
+                </li>
               </ul>
               <ul>
-								<li class="clearfix">
-									<a href="/author/maarten">
+                <li class="clearfix">
+                  <a href="/author/maarten">
                     <img src="/img/maarten.png" alt="Picture of Maarten" />
-									  <div class="info">
+                    <div class="info">
                       <p class="name">Maarten Vandendries</p>
-									    <p class="function">Developer</p>
+                      <p class="function">Developer</p>
                     </div>
-									</a>
-								</li>
-								<li class="clearfix">
-									<a href="/author/bram">
+                  </a>
+                </li>
+                <li class="clearfix">
+                  <a href="/author/bram">
                     <img src="/img/bram.png" alt="Picture of Bram" />
-									  <div class="info">
+                    <div class="info">
                       <p class="name">Bram Jans</p>
-									    <p class="function">Developer</p>
+                      <p class="function">Developer</p>
                     </div>
-									</a>
-								</li>
+                  </a>
+                </li>
                 <li class="clearfix">
                   <a href="/author/toon">
                     <img src="/img/toon.png" alt="Picture of Toon" />
@@ -247,20 +247,20 @@
                       </div>
                   </a>
                 </li>
-							</ul>
-						</div>
-						<div class="node" id="categories">
-							<h2>Categories</h2>
-							<ul>
-								<li><a href="/cocoa">Cocoa <small>{{ site.categories.cocoa | size }}</small></a></li>
-								<li><a href="/ruby">Ruby <small>{{ site.categories.ruby | size }}</small></a></li>
-								<li><a href="/rails">Rails <small>{{ site.categories.rails | size }}</small></a></li>
+              </ul>
+            </div>
+            <div class="node" id="categories">
+              <h2>Categories</h2>
+              <ul>
+                <li><a href="/cocoa">Cocoa <small>{{ site.categories.cocoa | size }}</small></a></li>
+                <li><a href="/ruby">Ruby <small>{{ site.categories.ruby | size }}</small></a></li>
+                <li><a href="/rails">Rails <small>{{ site.categories.rails | size }}</small></a></li>
                 <li><a href="/press_releases">Press releases <small>{{ site.categories.press_releases | size }}</small></a></li>
                 <li><a href="/general">General <small>{{ site.categories.general | size }}</small></a></li>
                 <li><a href="/team">Team <small>{{ site.categories.team | size }}</small></a></li>
-								<li><a href="/portfolio">Portfolio <small>{{ site.categories.portfolio | size }}</small></a></li>
-							</ul>
-						</div>
+                <li><a href="/portfolio">Portfolio <small>{{ site.categories.portfolio | size }}</small></a></li>
+              </ul>
+            </div>
             <div class="node" id="search">
               <h2>Search</h2>
               <form action="http://www.google.com/cse" id="cse-search-box">
@@ -277,11 +277,11 @@
               <a href='http://twitter.com/10to1'><img src="/img/twitter.svg"></a>
               <a href='http://facebook.com/10to1'><img src="/img/facebook.svg"></a>
             </div>
-					</div>
+          </div>
 
-			</div>
-		</div>
-		<footer class="bg-pattern">
+      </div>
+    </div>
+    <footer class="bg-pattern">
       <h2>Contact</h2>
       <div class="cols group">
         <div class="col-1">
@@ -309,20 +309,20 @@
       </div>
     </footer>
 
-		<script type="text/javascript">
-		//<![CDATA[
-		(function() {
-				var links = document.getElementsByTagName('a');
-				var query = '?';
-				for(var i = 0; i < links.length; i++) {
-					if(links[i].href.indexOf('#disqus_thread') >= 0) {
-						query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
-					}
-				}
-				document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/10to1/get_num_replies.js' + query + '"></' + 'script>');
-			})();
-		//]]>
-		</script>
+    <script type="text/javascript">
+    //<![CDATA[
+    (function() {
+        var links = document.getElementsByTagName('a');
+        var query = '?';
+        for(var i = 0; i < links.length; i++) {
+          if(links[i].href.indexOf('#disqus_thread') >= 0) {
+            query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+          }
+        }
+        document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/10to1/get_num_replies.js' + query + '"></' + 'script>');
+      })();
+    //]]>
+    </script>
 
-	</body>
+  </body>
 </html>
