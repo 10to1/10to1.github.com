@@ -5,7 +5,7 @@ author: Toon
 category: cocoa
 ---
 
-Althought Swift is gradually taking over Objective-C, we still use
+Although Swift is gradually taking over Objective-C, we still use
 Objective-C for most of our iOS apps. And recently we ran into the
 following problem.
 
@@ -21,7 +21,7 @@ something like:
 ```
 
 This is quite lengthy and cumbersome to write. So someone mentioned
-the following on our Slack channel: 
+the following on our Slack channel:
 
 > We need `dynamic_cast` in Objective-C.
 
